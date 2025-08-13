@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+  </head>
+  <body>
+    <header class="bg-white px-3 py-9 p-md-3 border-bottom">
+      <nav class="container d-flex align-items-center justify-content-between">
+        <!--Logo-->
+        <div class="max-w-92 max-w-md-124">
+          <h1 class="m-0">
+            <a href="index.html">
+              <img src="../assets/images/logo.png" alt="Logo" height="48px" />
+            </a>
+          </h1>
+        </div>
+
+        <!-- 選單 -->
+        <ul class="nav mx-auto d-none d-md-flex">
+          <li class="nav-item me-3">
+            <a class="nav-link px-4" href="service_plan.html">服務方案</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link px-4" href="#">關於職旅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">聯絡我們</a>
+          </li>
+        </ul>
+
+        <!-- 登入註冊按鈕 -->
+        <div class="d-flex justify-content-center align-items-center">
+          <div>
+            <a
+              type="button"
+              class="btn btn-third btn-lg d-flex justify-content-center align-items-center border border-1 border-gray-300 rounded-xl px-md-4 me-4 me-md-0"
+              href="index.html"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              登入/註冊
+            </a>
+          </div>
+          <!-- ham -->
+          <div class="d-md-none">
+            <a
+              class="py-10"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#hamModal"
+            >
+              <span class="material-symbols-outlined"> menu </span>
+            </a>
+          </div>
+          <!-- ham modal -->
+          <div class="modal" tabindex="-1" id="hamModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body pb-20">
+                  <div class="text-center">
+                    <a class="fs-7 py-7 px-19" href="#">服務方案</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="fs-7 py-7 px-19" href="#">關於職旅</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="fs-7 py-7 px-19" href="#">聯絡我們</a>
+                  </div>
+                </div>
+                <div class="modal-footer border-0">
+                  <!-- 按鈕 -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary d-flex justify-content-center align-items-center border border-1 border-gray-300 rounded-xl pe-2 p-md-3 ps-md-11 w-100"
+                  >
+                    <span class="fs-5 fs-md-4 fw-bold lh-sm">登入/註冊</span>
+                    <span class="material-symbols-outlined me-1 fs-5 fs-md-4">
+                      <span class="material-symbols-outlined"> </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
